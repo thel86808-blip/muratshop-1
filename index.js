@@ -40,7 +40,7 @@ We zijn blij dat je er bent!
     channel.send({ embeds: [embed] });
 });
 
-import http from "http";
+const http = require("http");
 
 const PORT = process.env.PORT || 3000;
 
@@ -52,5 +52,7 @@ http.createServer((req, res) => {
 });
 
 
+
 client.login(process.env.TOKEN);
+
 
